@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/verifySuccess/main",
+    "pages/verifyFail/main",
+    "pages/verify/main",
+    "pages/login/main",
+    "pages/index/main",
+    "pages/orderList/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "喜饭返",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#2E60D4",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/verifySuccess/main",
+        "text": "餐券",
+        "iconPath": "/static/images/icon-home-dar.png",
+        "selectedIconPath": "/static/images/icon-home-bri.png"
+      },
+      {
+        "pagePath": "pages/orderList/main",
+        "text": "订单",
+        "iconPath": "/static/images/icon-img-dar.png",
+        "selectedIconPath": "/static/images/icon-img-bri.png"
+      }
+    ]
+  }
+}
