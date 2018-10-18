@@ -1,0 +1,100 @@
+@charset "utf-8"; // 解决中文注释问题;
+//清楚标签默认样式;
+@mixin base() {
+  body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea,
+  p, blockquote, th, td, a, b, em, i, strong, html, article, aside, details, figcaption, figure,
+  footer, header, hgroup, menu, nav, section {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  /*内外边距为0*/
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  /*表格合并边框*/
+  fieldset, img {
+    border: 0;
+  }
+
+  /*将分组后的form元素边框，图片边框设置为无*/
+  address, caption, cite, code, dfn, em, th, var, i {
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  ol, ul {
+    list-style: none;
+    box-sizing: border-box;
+  }
+
+  q:before, q:after {
+    content: '';
+  }
+
+  abbr, acronym {
+    border: 0;
+    font-variant: normal;
+  }
+
+  /*不设置小型大写字母*/
+  sup {
+    vertical-align: text-top;
+  }
+
+  sub {
+    vertical-align: text-bottom;
+  }
+
+  * {
+    font-family: PingFangSC-Regular, SourceHanSansCN-Regular, Source Han Sans, Helvetica, Droid Sans, Arial, sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  input, textarea {
+    -webkit-user-select: auto;
+    margin: 0;
+    padding: 0;
+    outline: none;
+  }
+
+  input, textarea, select, a {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+  }
+
+  :focus {
+    outline: 0;
+  }
+
+  /*获取焦点时外边框为0*/
+  a {
+    text-decoration: none;
+    outline: none;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  input[type=number], input[type=button] {
+    -webkit-appearance: none
+  }
+
+  /*防止按钮在苹果手机上变色*/
+  input[type=text], input[type=tel], input[type=number], input[type=email], input[type=file] {
+    outline: none;
+  }
+
+}
