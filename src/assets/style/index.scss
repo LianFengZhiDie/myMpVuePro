@@ -1,0 +1,6 @@
+@charset "UTF-8"; // 解决中文注释问题;
+@import './_mixin.scss'; // _minxin
+@import './base.scss'; // 全局设置的基本样式
+
+@include base();
+$opacity: 0.8;
